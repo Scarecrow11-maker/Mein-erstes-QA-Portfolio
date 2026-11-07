@@ -4,13 +4,11 @@
 * **Beschreibung:** Überprüfen, ob sich ein registrierter Benutzer erfolgreich einloggen kann.
 * **Voraussetzung:** Der Benutzer besitzt ein aktives Konto.
 
-### Testschritte:
-1. Navigiere zur Login-Seite.
-2. Gib eine gültige E-Mail-Adresse in das Feld "E-Mail" ein.
-3. Gib das korrekte Passwort in das Feld "Passwort" ein.
-4. Klicke auf den Button "Einloggen".
+### Testmatrix:
 
-### Erwartetes Ergebnis:
-* Der Benutzer wird erfolgreich zum Dashboard weitergeleitet.
-* Eine Willkommensnachricht wird angezeigt.
-*
+| Schritt | Beschreibung | Testdaten | Erwartetes Ergebnis | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Navigiere zur Login-Seite | URL der App | Login-Maske wird geladen | Pass |
+| 2 | E-Mail-Adresse eingeben | `testuser@qa.com` | Feld nimmt Text an | Pass |
+| 3 | Korrektes Passwort eingeben | `SicheresPasswort123!` | Zeichen werden maskiert (••••) | Pass |
+| 4 | Auf "Einloggen" klicken | - | Weiterleitung zum Dashboard & Willkommensgruß | Pass |
